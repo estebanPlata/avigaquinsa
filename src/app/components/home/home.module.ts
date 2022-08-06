@@ -8,18 +8,19 @@ import { UsComponent } from "../us/us.component";
 import { NewsComponent } from "../news/news.component";
 import { InfrastructureComponent } from "../infrastructure/infrastructure.component";
 
+
 @NgModule({
     declarations:[
         HomeComponent,
         UsComponent,
         NewsComponent,
-        InfrastructureComponent
+        InfrastructureComponent,
     ],
     imports: [
         CommonModule,
         ComponentsRoutingModule,
         ReactiveFormsModule,
-        FormsModule,
+        FormsModule
     ],
     providers: [
 
