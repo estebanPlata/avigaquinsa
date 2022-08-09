@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { count } from 'rxjs';
+import { __decorate } from 'tslib';
 
 @Component({
   selector: 'app-header',
@@ -12,13 +13,21 @@ export class HeaderComponent implements OnInit {
     
   ngOnInit(): void {
   }
-  navBar(){
+  navBar(n:any){
     const onLoad:any                        = document.querySelector('#loader');
+    let ListaMenu:any                       = document.querySelectorAll('.listaMenu');
     onLoad.style.display = "block";
     setTimeout(function(){
       onLoad.style.display = "none";
     },1500)
-    
+    console.log(n)
+    for(let i=0; i<ListaMenu.length; i++){
+      if(n==i){
+        ListaMenu[i].style.textDecoration= "underline"
+      }else{
+        ListaMenu[i].style.textDecoration="none"
+      }
+    }
   }
   menu(){
     const lineaBarMenu1:any                 = document.querySelector('.linea-bar-menu1');
@@ -30,7 +39,7 @@ export class HeaderComponent implements OnInit {
     lineaBarMenu3.classList.toggle("activeLinea-bar-menu3"); 
     
     this.lightBox()
-    this.navBar()
+    this.navBar(5)
 }
 lightBox(){
   const menuLightBox:any                     = document.querySelector('.menu-light-box');
@@ -43,7 +52,7 @@ lightBox(){
     },1500)
   }
   else if(this.number){
-      menuLightBox.style.display = "block";
+      menuLightBox.style.display = "flex";
   } 
 }
 }

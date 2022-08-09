@@ -1,7 +1,10 @@
 *{
     text-decoration: none;
-    list-style: none;
+    list-style: none;    
 }
+.listaMenu:nth-child(1){
+    text-decoration: underline;   
+}    
 .nav{
     position: fixed;
     width: 100vw;
@@ -63,21 +66,33 @@
     position:absolute;
     top: 0;
     left: 100vw;
-    background-color: aqua;
+    background-color:  #bba45a;
     padding-top: 15vh;
     animation-name: menuOut;
     animation-duration: 1.5s;
     animation-iteration-count:1;
+    align-items: center;
+    justify-content: center;
 }
 .menu-lightBox  a{
-    font-size: 4vh;
+    font-size: 5vh;
     text-align: center;
+    font-style: italic;
+    color:#291f0a
 }
 .activeMenu-light-box{
     left: 0vw;
     animation-name: menuIn;
     animation-duration: 1.5s;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1; 
+}
+.menu-list{
+    transform: translateY(-50%);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 #navButton{
     display: none;
@@ -85,12 +100,11 @@
 .bg-light{
     display: none;
 }
-
 .listaMenu:nth-child(1):hover,
 .listaMenu:nth-child(2):hover,
 .listaMenu:nth-child(5):hover,
 .listaMenu:nth-child(4):hover{
-    text-decoration: underline;
+    text-decoration: underline;  
 }
 @keyframes menuIn{
     0%{
