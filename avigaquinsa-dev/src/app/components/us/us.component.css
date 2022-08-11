@@ -1,0 +1,321 @@
+.main-container{
+    width: 100vw;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: banner 80s infinite linear alternate;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.info{
+    width: 50%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.596);
+    box-shadow: 0 0 5px #fff, 0 0 10px rgb(153, 151, 151), 0 0 15px rgb(116, 110, 110), 0 0 20px rgb(105, 104, 104), 0 0 25px #000;
+    background-image: linear-gradient(180deg,rgb(102, 99, 99),rgb(66, 58, 58),rgb(44, 33, 33));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.title{
+    text-align: center;
+    font-size: 6vw;
+    color: white;
+}
+.text{
+    text-align: center;
+    color: #a07624;
+    font-size: 2vw;
+    width: 80%;
+}
+@keyframes banner{
+    0%,12.5%{
+       background-color: aqua;
+    }
+    12.5%,25%{
+        background-color: rgb(17, 20, 20);
+     }
+     25%,37.5%{
+        background-color: rgb(24, 173, 173);
+     }
+     37.5%,50%{
+        background-color: rgb(98, 0, 255);
+     }
+     50%,62.5%{
+        background-color: rgb(255, 145, 0);
+     }
+     62.5%,75%{
+        background-color: rgb(0, 255, 34);
+     }
+     87.5%,100%{
+        background-color: rgb(255, 0, 0);
+    }
+}
+/* ******************linea del tiempo******************* */
+.time-line{
+    background-image: linear-gradient(180deg,rgba(82, 77, 77, 0.747),rgba(116, 111, 111, 0.884),rgb(165, 150, 150));
+    display: grid;
+    grid-template-columns: repeat(3,fr);
+    gap: 2rem;
+}
+.time-line-item{
+    box-shadow: 0 0 5px #fff, 0 0 10px rgb(153, 151, 151), 0 0 15px rgb(116, 110, 110), 0 0 20px rgb(105, 104, 104), 0 0 25px #000;
+    background-image: linear-gradient(45deg,rgb(122, 112, 112),rgb(87, 84, 84),rgb(136, 124, 124));
+    border-radius: 30px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: #000 solid;
+}
+.time-line-item div{
+    display: flex;
+    justify-content: center;
+}
+.time-line-item:nth-child(1){
+    grid-column: 1/2;
+}
+.time-line-item:nth-child(2){
+    grid-column: 2/3;
+}
+.time-line-item:nth-child(3){
+    grid-column: 3/4;
+}
+.subtitle{
+    color: #ebdf16;
+    text-align: center;
+    font-size: 3vw;
+    font-family: cursive;
+    font-weight: 1000;
+}
+.image{
+    height: auto;
+}
+.text-time{
+    font-size: 1.7vw;
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    color: #a07624;
+    /* border: dashed #fe0000; */
+    border-radius: 10px;
+    text-align: center;
+}
+/* *********mision vision*********** */
+.mision-vision{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    background-color: rgb(188, 191, 192);
+}
+.mision-vision-item:nth-child(1){
+    grid-column: 1/2;
+}
+.mision-vision-item:nth-child(2){
+    grid-column: 2/3;
+}
+/* **************valores******************* */
+.valores{
+    background-color: rgb(107, 103, 103);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.valores-item{
+    display: grid;
+    grid-template-columns: repeat(6,1fr); 
+    width: 80vw;
+}
+.container-valores{
+    display: flex;
+    align-items: center;
+}
+.container-valores:nth-child(1){
+    grid-column: 1/3;
+}
+.container-valores:nth-child(2){
+    grid-column: 5/7;
+}
+.container-valores:nth-child(3){
+    grid-column: 3/5;
+}
+.title-valores{
+    font-size: 4.5vw;
+    color: white;
+    height: 15vh;
+    cursor: pointer;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+}
+.circle{
+    width: 750px;
+    height: 750px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: #000 solid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.valor-title{
+    font-size: 2vw;
+    color: #fff;
+    width: 16vw;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.text-valores{
+    font-size: 1.3vw;
+    color: #a07624;
+    text-align: center;
+    width: 90%;
+}
+/* valores V2 */
+.valoresV2{
+    background-color: rgb(107, 103, 103);
+    width: 100vw;
+    display: flex;
+}
+.container-title-valoresV2:nth-child(1){
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-valoresV2{
+    font-size: 3vw;
+    color: #fff;  
+    margin: 0.5em;
+}
+.subtitle-valorV2{
+    margin: 1em;
+    font-size: 2vw;
+}
+/* .subtitle-valorV2:nth-child(1){
+    text-decoration: underline;
+} */
+/* .subtitle-valorV2:hover{
+    color: rgb(55, 54, 54);
+    text-shadow: 1px 1px 2px rgb(252, 250, 250), 0 0 25px rgb(114, 114, 130), 0 0 5px  #a07624;
+} */
+.container-title-valoresV2:nth-child(2){
+    width: 50%;
+    display: flex;
+    align-content: center;
+}
+.texto-valoresV2{
+    margin: 1em;
+    font-size: 4vh;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+    display: none;
+    align-items: center;
+}
+.texto-valoresV2:nth-child(1){
+    display: block;
+}
+
+@media screen and (max-width: 1100px) {
+    .title{
+        font-size: 8vw;
+    }
+    .text{
+        font-size: 5.5vw;
+        width: 90%;
+    }   
+    .info{
+        width: 90%;
+    }
+    /* **************linea tiempo */
+    .time-line{
+        justify-content: center;
+        gap: 1rem;
+    }
+    .time-line-item:nth-child(1){
+        grid-column: 1/4;
+        width: 80vw;
+    }
+    .time-line-item:nth-child(2){
+        grid-column: 1/4;
+        width: 80vw;
+    }
+    .time-line-item:nth-child(3){
+        grid-column: 1/4;
+        width: 80vw;
+    }
+    .text-time{
+        font-size: 4.5vw;
+    }
+    .subtitle{
+        font-size: 6vw;
+    }/* *****mision vision ******* */
+    .mision-vision-item:nth-child(1){
+        grid-column: 1/3;
+    }
+    .mision-vision-item:nth-child(2){
+        grid-column: 1/3;
+    }
+    /* valores V2 */
+    .valoresV2{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-title-valoresV2:nth-child(1){
+        width: 100%;
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+        justify-content: center;
+    }
+    .title-valoresV2{
+        width: 100%;
+        font-size: 6vw; 
+        text-align: center;
+    }
+    .subtitle-valorV2{
+        font-size: 4.5vw;
+        margin: 0.5em;        
+    }
+    .container-title-valoresV2:nth-child(2){
+        width: 100%;
+    }
+    .texto-valoresV2{
+        font-size: 2.5vh;
+    }
+    /* *******valores** */
+    .title-valores{
+        font-size: 8vw;
+    }
+    .container-valores:nth-child(1){
+        grid-column: 1/7;
+    }
+    .container-valores:nth-child(2){
+        grid-column: 1/7;
+    }
+    .container-valores:nth-child(3){
+        grid-column: 1/7;
+    }
+    .circle{
+        width: 350px;
+        height: 350px;
+    }
+    .valores-item{
+        width: auto;
+    }
+    .text-valores{
+        font-size: 4vw;
+    }
+    .valor-title{
+        font-size: 6vw;
+    }
+}

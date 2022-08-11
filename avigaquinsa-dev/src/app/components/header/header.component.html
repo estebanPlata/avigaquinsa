@@ -1,0 +1,48 @@
+<nav class="nav" id="navHeader">
+        <ul class="">
+          <li class="listaMenu">
+            <a class=""  [routerLink]="['']" (click)="navBar(0)">Inicio</a>
+          </li>
+          <li class="listaMenu">
+            <a class=""  [routerLink]="['infrastruture']" (click)="navBar(1)">Infraestructura</a>
+          </li>
+          <li class="listaMenu">
+            <a class=""  [routerLink]="['']" (click)="navBar(2)">logo</a>
+          </li>
+          <li class="listaMenu">
+            <a class=""  [routerLink]="['us']" (click)="navBar(3)">Nosotros</a>
+          </li>
+          <li class="listaMenu" >
+            <a class=""  [routerLink]="['news']" (click)="navBar(4)">Noticias</a>
+          </li>  
+        </ul>         
+</nav>
+<nav class="bg-light">
+    <!-- boton menu -->
+    <div class="bar-menu" (click)='menu()'>
+        <span class="linea-bar-menu1"></span>
+        <span class="linea-bar-menu2"></span>
+        <span class="linea-bar-menu3"></span>
+    </div>
+    <div class="menu-light-box">
+        <ul class="menu-list">
+            <li class="menu-lightBox">
+                <a  [routerLink]="['']" (click)="menu()">Inicio</a>
+            <li class="menu-lightBox" >
+                <a [routerLink]="['infrastruture']"(click)="menu()">Infraestructura</a>
+            </li>
+            <li class="menu-lightBox">
+                <a [routerLink]="['us']"(click)="menu()">Nosotros</a>
+            </li>
+            <li class="menu-lightBox" >
+                <a [routerLink]="['news']"(click)="menu()">Noticias</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--  -->
+<main class="on-load" id="loader">
+  <div></div>
+  <div></div>
+</main>
+
