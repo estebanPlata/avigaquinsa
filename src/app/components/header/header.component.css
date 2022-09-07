@@ -8,7 +8,7 @@
 .nav{
     position: fixed;
     width: 100vw;
-    height: 7vh;
+    height: 10vh;
     color: white;
     justify-content: center;
     z-index: 10;
@@ -21,13 +21,32 @@
     align-items: flex-end;
 }
 .nav .listaMenu{
-    align-items: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align:flex-end;
 }
 .nav .listaMenu a{
     color: #a07624;
-    margin-right: 4vw;
+    margin: 3vw;
+}
+.listaMenu:nth-child(3){
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circulo {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid #a07624 5px;
+}
+.logo{
+    /* width: 80%; */
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
 }
 .bar-menu{
     position: absolute;
@@ -44,7 +63,7 @@
 .bar-menu span{
     width: 100%;
     height: 6px;
-    background-color: #bba45a;
+    background-color: #57503b;
     display: block;
     transform-origin: 0px;
     transition: all 1000ms;
@@ -106,6 +125,17 @@
 .listaMenu:nth-child(4):hover{
     text-decoration: underline;  
 }
+@keyframes logo{
+    0%{
+        width: 85%;
+    }
+    50%{
+        width: 75%;
+    }
+    100%{
+        width: 85%;
+    }
+}
 @keyframes menuIn{
     0%{
         transform: translateX(100%);
@@ -115,7 +145,7 @@
     }
 }
 @keyframes menuOut{
-    0%{
+    0%,50%{
         transform: translateX(-100%);
     }
     100%{
@@ -132,22 +162,23 @@
     z-index: 1000;
     display: none;
 }
-.on-load div{
+.on-load .cortina{
     width: 100vw;
     height: 50vh;
     border: solid #ac9363;
     background-color: #a07624;
 }
-.on-load div:nth-child(1){
+.on-load .cortina:nth-child(1){
     animation-name: upCurtain;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
 }
-.on-load div:nth-child(2){
+.on-load .cortina:nth-child(2){
     animation-name: downCurtain;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
 }
+
 
 @keyframes upCurtain{
     0%{
@@ -175,6 +206,45 @@
     }
     100%{
         transform: translateY(100%);
+    }
+}
+.pro-logo{
+    position: absolute;
+    z-index: 1001;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    animation-name: proLogo;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    border-radius: 50% 50% 50% / 66% 66% 35% 35%;
+    border: solid #a07624;;
+    width: 6%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(150deg, rgb(250, 217, 150),rgb(236, 197, 129),#ffd562);
+    display: none;
+}
+.img-pro-logo{
+    width: 100%;
+}
+@keyframes proLogo{
+    0%{
+        width: 6%;
+        height: 20%;
+    }
+    40%{
+        width: 5%;
+        height: 17%;
+    }
+    70%{
+        width: 5%;
+        height: 17%;
+    }
+    100%{
+        width: 6%;
+        height: 20%;
     }
 }
 

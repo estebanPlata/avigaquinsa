@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { DataServices } from './shared/services/data.services';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PruebaComponent } from './shared/prueba/prueba/prueba.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PruebaComponent
   ],
   imports: [
     BrowserModule,

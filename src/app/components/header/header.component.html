@@ -6,8 +6,9 @@
           <li class="listaMenu">
             <a class=""  [routerLink]="['infrastruture']" (click)="navBar(1)">Infraestructura</a>
           </li>
-          <li class="listaMenu">
-            <a class=""  [routerLink]="['']" (click)="navBar(2)">logo</a>
+          <li class="listaMenu circulo">
+            <img class="logo" src="/assets/img/009logo.png" alt="">
+            <!-- <a class=""  [routerLink]="['']" (click)="navBar(2)">logo</a> -->
           </li>
           <li class="listaMenu">
             <a class=""  [routerLink]="['us']" (click)="navBar(3)">Nosotros</a>
@@ -42,7 +43,10 @@
 </nav>
 <!--  -->
 <main class="on-load" id="loader">
-  <div></div>
-  <div></div>
+  <div class="cortina"></div>
+  <div class="cortina"></div>
 </main>
+<div class="pro-logo" id="proLogo">
+  <img class="img-pro-logo" src="/assets/img/009logo.png" alt="">
+</div>
 

@@ -15,10 +15,13 @@ export class HeaderComponent implements OnInit {
   }
   navBar(n:any){
     const onLoad:any                        = document.querySelector('#loader');
+    const proLogo:any                       = document.querySelector('#proLogo');
     let ListaMenu:any                       = document.querySelectorAll('.listaMenu');
     onLoad.style.display = "block";
+    proLogo.style.display = "flex";
     setTimeout(function(){
       onLoad.style.display = "none";
+      proLogo.style.display = "none";
     },1500)
     console.log(n)
     for(let i=0; i<ListaMenu.length; i++){
@@ -39,7 +42,7 @@ export class HeaderComponent implements OnInit {
     lineaBarMenu3.classList.toggle("activeLinea-bar-menu3"); 
     
     this.lightBox()
-    this.navBar(5)
+    // this.navBar(5)
 }
 lightBox(){
   const menuLightBox:any                     = document.querySelector('.menu-light-box');
